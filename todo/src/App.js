@@ -11,7 +11,6 @@ const App = () => {
   // this component is going to take care of state, and any change handlers you need to work with your state
       
       const addTodo = task => {
-          // update grocery state with a new item
           const newTodo = {
             task: task,
             id: Math.random(),

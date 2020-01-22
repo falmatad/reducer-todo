@@ -7,14 +7,13 @@ import Todo from './Todo';
 
 
 const TodoList = props => {
-  // const sortedList = props.groceries.sort((a, b) => a.purchased - b.purchased);
 
   return (
     <div className="todo-list">
-      {props.state.map(item => (
+      {props.state.map(todo => (
         <Todo
-          key={item.id}
-          item={item}
+          key={todo.id}
+          item={todo}
           toggleCompleted={props.toggleCompleted}
         />
       ))}
